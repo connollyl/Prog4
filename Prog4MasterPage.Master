@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Prog4MasterPage.master.cs" Inherits="WebSite.Prog4.Prog4MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>UWP - CS 3870</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="margin-right: 10em">
+    <form id="form1" runat="server">
+        <div>
+            <h1>Web Protocols, Technologies, and Applications</h1>
+        </div>
+        <div>
+            <h2>Logan Connolly
+            <br />
+                Prog 4</h2>
+        </div>
+        <div class="leftTreeView">
+            <ul id="TreeView" style="list-style-type: none">
+                <li>
+                    <span class="caret">
+                        <asp:HyperLink ID="linkDefault" runat="server" NavigateUrl="~/Prog4/Default.aspx">All Products</asp:HyperLink></span>
+                </li>
+                <li>
+                    <span class="caret">
+                        <asp:HyperLink ID="linkUpdating" runat="server" NavigateUrl="~/Prog4/Updating.aspx">Updating</asp:HyperLink></span>
+                </li>
+                <li>
+                    <span class="caret">
+                        <asp:HyperLink ID="linkShopping" runat="server" NavigateUrl="~/Prog4/Shopping.aspx">Shopping</asp:HyperLink></span>
+                </li>
+            </ul>
+        </div>
+        <div style="text-align: center">
+            <div style="display: inline-block">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="DataSourceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+    </form>
+</body>
+</html>

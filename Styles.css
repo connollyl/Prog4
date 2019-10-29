@@ -1,0 +1,47 @@
+﻿h1 {
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-family: impact;
+}
+
+h3 {
+    color: darkturquoise;
+    text-align: center;
+    font-family: 'Bell MT';
+}
+
+navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    width: 10em;
+    z-index: 1;
+}
+
+center {
+    align-content: center;
+}
+
+caret {
+    cursor: pointer;
+    user-select: none;
+}
+
+leftTreeView {
+    position: absolute; 
+    left: 30px; 
+    top: 100px;
+    height: 150px;
+    width: 110px;
+}
